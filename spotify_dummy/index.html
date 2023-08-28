@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify-Dummy</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+
+    <div id="root">
+
+        <!-- ?  main containter holding left and right div -->
+        <div class="main-container">
+
+            <div id="main-section-1" class="containers-section-1">
+
+                <div class="home-search-section">
+                    <ul>
+                        <li class="hover"><a href=""><i class="fa-solid fa-house"></i>Home</a></li>
+                        <li class="hover"><a href=""><i class="fa-solid fa-magnifying-glass"></i>Auto</a></li>
+                    </ul>
+                </div>
+
+                <div class="collpse-playlist">
+
+                    <div class="div-2">
+                        <section class="svg-collapse">
+                            <a onclick="collpase()" id="linking-tag">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                    <path
+                                        d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160zm352-160l-160 160c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L301.3 256 438.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0z" />
+                                </svg>
+                                <span class="linking-tag-span">Your Heading</span></a>
+
+                            <section class="last-icons-svg">
+                                <section onclick="logoAddPlaylist()" class="logo plus-logo .hover-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                                        viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                        <path
+                                            d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z" />
+                                    </svg>
+                                </section>
+
+                                <section onclick="logoChangeToGrid()" class="logo grid-item">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                                        viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                        <path
+                                            d="M128 136c0-22.1-17.9-40-40-40L40 96C17.9 96 0 113.9 0 136l0 48c0 22.1 17.9 40 40 40H88c22.1 0 40-17.9 40-40l0-48zm0 192c0-22.1-17.9-40-40-40H40c-22.1 0-40 17.9-40 40l0 48c0 22.1 17.9 40 40 40H88c22.1 0 40-17.9 40-40V328zm32-192v48c0 22.1 17.9 40 40 40h48c22.1 0 40-17.9 40-40V136c0-22.1-17.9-40-40-40l-48 0c-22.1 0-40 17.9-40 40zM288 328c0-22.1-17.9-40-40-40H200c-22.1 0-40 17.9-40 40l0 48c0 22.1 17.9 40 40 40h48c22.1 0 40-17.9 40-40V328zm32-192v48c0 22.1 17.9 40 40 40h48c22.1 0 40-17.9 40-40V136c0-22.1-17.9-40-40-40l-48 0c-22.1 0-40 17.9-40 40zM448 328c0-22.1-17.9-40-40-40H360c-22.1 0-40 17.9-40 40v48c0 22.1 17.9 40 40 40h48c22.1 0 40-17.9 40-40V328z" />
+                                    </svg>
+                                </section>
+
+                                <section onclick="logoCollapse400px()" class="logo collpase-left">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
+                                        <path
+                                            d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z" />
+                                    </svg>
+                                </section>
+                            </section>
+                        </section>
+
+
+                        <div class="playlist-section">
+                            <div class="icon-section-playlist div-playlist">
+                                <a id="playListLogo1" class="logo-playlist logo-cros logo_collapse" href="#"><i
+                                        class="fa-solid fa-xmark"></i></a>
+                                <a id="playI2" class="logo-playlist" onclick="playlistEvent()" href="#">Playlists</a>
+                                <a id="playlist-section1-item3" class="logo-playlist logo_collapse" href="#">By
+                                    Spotify</a>
+                                <a id="playlist-section1-item4" class="logo-playlist logo_collapse" href="#">By You</a>
+                                <div id="search_recent_logo" class="last-icon-section-playlist div-playlist">
+                                    <a id="logo-search" class="logo-last-playlist logo-search" href=""><i
+                                            class="fa-solid fa-magnifying-glass"></i></a>
+                                    <a class="logo-last-playlist logo-recent" href="">Recents</a>
+                                    <a class="logo-last-playlist logo-down" href=""><svg
+                                            xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
+                                            <path
+                                                d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
+                                        </svg></a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div id="headingTitles" class="heading-playlist">
+                            <p>Title</p>
+                            <p>Date Added</p>
+                            <p>Played</p>
+                        </div>
+
+                    </div>
+
+                    <div class="main-playlist-section">
+                        <div class="playlist-div">
+
+                            <div class="text-image-combo-section">
+                                <div class="playlist-image-section">
+                                    <img src="./img/girl with acne.jpg" alt="">
+                                </div>
+
+                                <div class="playlist-section-text">
+                                    <div class="playlist-name">
+                                        <p>Playlist</p>
+                                    </div>
+
+                                    <div class="playlist-refference">
+                                        <p class="common-p">Play-ref</p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="date-added">
+                                <p class="common-p">12-3-2023</p>
+                            </div>
+
+                            <div class="last-played">
+                                <p class="common-p">10 hours ago</p>
+                            </div>
+                        </div>
+
+                        <div class="playlist-div">
+
+                            <div class="text-image-combo-section">
+                                <div class="playlist-image-section">
+                                    <img src="./img/boy-potrait-red-background.jpeg" alt="">
+                                </div>
+
+                                <div class="playlist-section-text">
+                                    <div class="playlist-name">
+                                        <p>Playlist</p>
+                                    </div>
+
+                                    <div class="playlist-refference">
+                                        <p class="common-p">Play-ref</p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="date-added">
+                                <p class="common-p">12-3-2023</p>
+                            </div>
+
+                            <div class="last-played">
+                                <p class="common-p">10 hours ago</p>
+                            </div>
+                        </div>
+
+                        <div class="playlist-div">
+
+                            <div class="text-image-combo-section">
+                                <div class="playlist-image-section">
+                                    <img src="./img/girl_potrait.jpg" alt="">
+                                </div>
+
+                                <div class="playlist-section-text">
+                                    <div class="playlist-name">
+                                        <p>Playlist</p>
+                                    </div>
+
+                                    <div class="playlist-refference">
+                                        <p class="common-p">Play-ref</p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="date-added">
+                                <p class="common-p">12-3-2023</p>
+                            </div>
+
+                            <div class="last-played">
+                                <p class="common-p">10 hours ago</p>
+                            </div>
+                        </div>
+
+                        <div class="playlist-div">
+
+                            <div class="text-image-combo-section">
+                                <div class="playlist-image-section">
+                                    <img src="./img/golden_dog.jpg" alt="">
+                                </div>
+
+                                <div class="playlist-section-text">
+                                    <div class="playlist-name">
+                                        <p>Playlist</p>
+                                    </div>
+
+                                    <div class="playlist-refference">
+                                        <p class="common-p">Play-ref</p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="date-added">
+                                <p class="common-p">12-3-2023</p>
+                            </div>
+
+                            <div class="last-played">
+                                <p class="common-p">10 hours ago</p>
+                            </div>
+                        </div>
+
+                        <div class="playlist-div">
+
+                            <div class="text-image-combo-section">
+                                <div class="playlist-image-section">
+                                    <img src="./img/lady_potrait.jpg" alt="">
+                                </div>
+
+                                <div class="playlist-section-text">
+                                    <div class="playlist-name">
+                                        <p>Playlist</p>
+                                    </div>
+
+                                    <div class="playlist-refference">
+                                        <p class="common-p">Play-ref</p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="date-added">
+                                <p class="common-p">12-3-2023</p>
+                            </div>
+
+                            <div class="last-played">
+                                <p class="common-p">10 hours ago</p>
+                            </div>
+                        </div>
+
+                        <div class="playlist-div">
+
+                            <div class="text-image-combo-section">
+                                <div class="playlist-image-section">
+                                    <img src="./img/girl with acne.jpg" alt="">
+                                </div>
+
+                                <div class="playlist-section-text">
+                                    <div class="playlist-name">
+                                        <p>Playlist</p>
+                                    </div>
+
+                                    <div class="playlist-refference">
+                                        <p class="common-p">Play-ref</p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="date-added">
+                                <p class="common-p">12-3-2023</p>
+                            </div>
+
+                            <div class="last-played">
+                                <p class="common-p">10 hours ago</p>
+                            </div>
+                        </div>
+
+                        <div class="playlist-div">
+
+                            <div class="text-image-combo-section">
+                                <div class="playlist-image-section">
+                                    <img src="./img/girl with acne.jpg" alt="">
+                                </div>
+
+                                <div class="playlist-section-text">
+                                    <div class="playlist-name">
+                                        <p>Playlist</p>
+                                    </div>
+
+                                    <div class="playlist-refference">
+                                        <p class="common-p">Play-ref</p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="date-added">
+                                <p class="common-p">12-3-2023</p>
+                            </div>
+
+                            <div class="last-played">
+                                <p class="common-p">10 hours ago</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Main-section-one-ends here  -->
+
+
+            <!-- Section 2 (right-hand-section) starts here  -->
+
+            <div class="main-section-2">
+
+                <div class="upper-nav">
+
+                    <div class="section-logo-less-greate-than">
+                        <section class="upper-nav-back-logo">
+                            <div class="div-logo-inline less-than-logo ">
+                                <button class=""><i class="fa-solid fa-less-than"></i></button>
+                            </div>
+
+                            <div class="div-logo-inline greater-than-logo">
+                                <button class=""><i class="fa-solid fa-greater-than"></i></button>
+                            </div>
+                        </section>
+                    </div>
+
+                    <div class="flex-end-logo-section">
+                        <button class="flex-items explore-premium">Explore Premium</button>
+                        <a href="#" class="flex-items install-app-button">
+                            <span class="main-span-install-app">
+                                <span class="logo-span"><svg role="img" height="16" width="16" aria-hidden="true"
+                                        viewBox="0 0 16 16" data-encore-id="icon" class="Svg-sc-ytk21e-0 haNxPq">
+                                        <path
+                                            d="M4.995 8.745a.75.75 0 0 1 1.06 0L7.25 9.939V4a.75.75 0 0 1 1.5 0v5.94l1.195-1.195a.75.75 0 1 1 1.06 1.06L8 12.811l-.528-.528a.945.945 0 0 1-.005-.005L4.995 9.805a.75.75 0 0 1 0-1.06z">
+                                        </path>
+                                        <path
+                                            d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13z">
+                                        </path>
+                                    </svg></span>
+                                <span class="text-install">Install App</span>
+                            </span>
+                        </a>
+                        <button class="flex-items logo-account-info"><svg role="img" height="16" width="16"
+                                aria-hidden="true" data-testid="user-icon" viewBox="0 0 16 16" data-encore-id="icon"
+                                class="Svg-sc-ytk21e-0 haNxPq">
+                                <path
+                                    d="M6.233.371a4.388 4.388 0 0 1 5.002 1.052c.421.459.713.992.904 1.554.143.421.263 1.173.22 1.894-.078 1.322-.638 2.408-1.399 3.316l-.127.152a.75.75 0 0 0 .201 1.13l2.209 1.275a4.75 4.75 0 0 1 2.375 4.114V16H.382v-1.143a4.75 4.75 0 0 1 2.375-4.113l2.209-1.275a.75.75 0 0 0 .201-1.13l-.126-.152c-.761-.908-1.322-1.994-1.4-3.316-.043-.721.077-1.473.22-1.894a4.346 4.346 0 0 1 .904-1.554c.411-.448.91-.807 1.468-1.052zM8 1.5a2.888 2.888 0 0 0-2.13.937 2.85 2.85 0 0 0-.588 1.022c-.077.226-.175.783-.143 1.323.054.921.44 1.712 1.051 2.442l.002.001.127.153a2.25 2.25 0 0 1-.603 3.39l-2.209 1.275A3.25 3.25 0 0 0 1.902 14.5h12.196a3.25 3.25 0 0 0-1.605-2.457l-2.209-1.275a2.25 2.25 0 0 1-.603-3.39l.127-.153.002-.001c.612-.73.997-1.52 1.052-2.442.032-.54-.067-1.097-.144-1.323a2.85 2.85 0 0 0-.588-1.022A2.888 2.888 0 0 0 8 1.5z">
+                                </path>
+                            </svg></button>
+                    </div>
+
+                </div>
+
+                <div class="after-nav">
+                    <div class="well-wishes">
+                        <h1>Good Morning</h1>
+                    </div>
+
+                    <div id="main-container-made-for" class="made-for">
+                        <span class="made-for-text"><p>Made for Gsw</p></span>
+                        <div class="made-for-grid-section">
+                            <div onclick="runthis()" id="grid-item1" class="flex-items-made-for leo">
+                                <div class="image-section-made-for-grid-layout ">
+                                    <img src="./img/golden_dog.jpg" alt="">
+                                </div>
+                                <div class="text-section-made-for-grid-layout">
+                                    <p class="text-grid-1">Myplaylist name</p>
+                                </div>
+
+                                <div class="play-button-seciton-made-for-grid-layout">
+                                    <div class="background">
+                                        <div class="play-logo">
+                                            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div id="grid-item2" class="flex-items-made-for">
+                                <div class="image-section-made-for-grid-layout">
+                                    <img src="./img/lady_potrait.jpg" alt="">
+                                </div>
+                                <div class="text-section-made-for-grid-layout">
+                                    <p class="text-grid-1">Myplaylist name</p>
+                                </div>
+                                
+                                <div class="play-button-seciton-made-for-grid-layout">
+                                    <div class="background">
+                                        <div class="play-logo">
+                                            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div id="grid-item3" class="flex-items-made-for">
+                                <div class="image-section-made-for-grid-layout">
+                                    <img src="./img/girl_raw_image.jpg" alt="">
+                                </div>
+                                <div class="text-section-made-for-grid-layout">
+                                    <p class="text-grid-1">Myplaylist name</p>
+                                </div>
+
+                                <div class="play-button-seciton-made-for-grid-layout">
+                                    <div class="background">
+                                        <div class="play-logo">
+                                            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div id="grid-item4" class="flex-items-made-for">
+                                <div class="image-section-made-for-grid-layout">
+                                    <img src="./img/girl with acne.jpg" alt="">
+                                </div>
+                                <div class="text-section-made-for-grid-layout">
+                                    <p class="text-grid-1">Myplaylist name</p>
+                                </div>
+
+                                <div class="play-button-seciton-made-for-grid-layout">
+                                    <div class="background">
+                                        <div class="play-logo">
+                                            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div id="grid-item5" class="flex-items-made-for">
+                                <div class="image-section-made-for-grid-layout">
+                                    <img src="./img/boy-potrait-red-background.jpeg" alt="">
+                                </div>
+                                <div class="text-section-made-for-grid-layout">
+                                    <p class="text-grid-1">Myplaylist name</p>
+                                </div>
+
+                                <div class="play-button-seciton-made-for-grid-layout">
+                                    <div class="background">
+                                        <div class="play-logo">
+                                            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div  id="grid-item6" class="flex-items-made-for">
+                                <div class="image-section-made-for-grid-layout">
+                                    <img src="./img/girl_potrait.jpg" alt="">
+                                </div>
+                                <div class="text-section-made-for-grid-layout">
+                                    <p class="text-grid-1">Myplaylist name</p>
+                                </div>
+
+                                <div class="play-button-seciton-made-for-grid-layout">
+                                    <div class="background">
+                                        <div class="play-logo">
+                                            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ? the second container ends here -->
+
+                <!-- ! from here new section begins -->
+
+                <div class="c3-container-section-2">
+
+                    <div class="main-content-3-container">
+
+                        <div class="heading-3-container">
+                            <div class="main_link">
+                                <a class="links-c3 link-hover" href="">New Released</a>
+                            </div>
+                            <div class="showapp_section">
+                                <a class="links-c3 link-hover"  href="#">Show all</a>
+                            </div>
+                        </div>
+
+                        <div class="flex_containers-3-section">
+                            <div class="flex-container flex-hover">
+                                <div class="img-section">
+                                    <img src="./img/boy-potrait-red-background.jpeg" alt="">
+                                </div>
+                                <div class="text-section">
+                                    <div class="song-section">
+                                        <a class="flex-text-inside" href="">Darshal Raval</a>
+                                    </div>
+                                    <div class="song-name">
+                                        <a class="flex-text-inside" href="">Kabhi Na</a>
+                                    </div>
+                                </div>
+                                <div class="c3-playbutton">
+                                    <div class="logo-section-c3-playbutton">
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512"><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="flex-container flex-hover">
+                                <div class="img-section">
+                                    <img src="./img/golden_dog.jpg" alt="">
+                                </div>
+                                <div class="text-section">
+                                    <div class="song-section">
+                                        <a class="flex-text-inside" href="">Darshal Raval</a>
+                                    </div>
+                                    <div class="song-name">
+                                        <a class="flex-text-inside" href="">Kabhi Na</a>
+                                    </div>
+                                    <div class="c3-playbutton">
+                                        <div class="logo-section-c3-playbutton">
+                                            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512"><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="flex-container flex-hover">
+                                <div class="img-section">
+                                    <img src="./img/girl with acne.jpg" alt="">
+                                </div>
+                                <div class="text-section">
+                                    <div class="song-section">
+                                        <a class="flex-text-inside" href="">Darshal Raval</a>
+                                    </div>
+                                    <div class="song-name">
+                                        <a class="flex-text-inside" href="">Kabhi Na</a>
+                                    </div>
+                                    <div class="c3-playbutton">
+                                        <div class="logo-section-c3-playbutton">
+                                            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512"><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="flex-container flex-hover">
+                                <div class="img-section">
+                                    <img src="./img/lady_potrait.jpg" alt="">
+                                </div>
+                                <div class="text-section">
+                                    <div class="song-section">
+                                        <a class="flex-text-inside" href="">Darshal Raval</a>
+                                    </div>
+                                    <div class="song-name">
+                                        <a class="flex-text-inside" href="">Kabhi Na</a>
+                                    </div>
+                                    <div class="c3-playbutton">
+                                        <div class="logo-section-c3-playbutton">
+                                            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512"><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+        <!-- Main-section-container Ends Here -->
+    </div>
+
+</body>
+<script src="./index.js "></script>
+    
+</html>
+
+
+
+<!-- <i class="fa-solid fa-house"></i> -->

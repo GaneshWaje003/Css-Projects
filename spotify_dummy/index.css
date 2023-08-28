@@ -1,0 +1,704 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@500&display=swap');
+
+*{
+    padding:0;
+    margin:0;
+    scrollbar-width:thin;
+    box-sizing: border-box;
+    font-family: 'Signika Negative', sans-serif;
+}
+
+#root{
+    height: 100vh;
+    width: 100vw;
+}
+
+body{
+    background-color: #000;
+}
+
+.main-container{
+    padding:5px;
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.containers-section-1
+{
+    border-radius:14px;
+    resize:horizontal;
+    display: inline-block;
+    width:45%;
+    max-width: 70%;
+    min-width: 95px;
+    overflow: auto;
+    height:100%;
+    background-color: black;
+}
+
+.home-search-section
+{
+
+    width:100%;
+    min-width:160px;
+    border-radius: 14px;
+    max-width: 100%;
+    height:112px;
+    background-color:#212020;
+    resize:horizontal;
+    overflow:scroll;
+    margin:10px;
+    padding:10px;
+}
+
+.home-search-section > ul{
+    width:100%;
+    height:100%;
+    border-radius: 14px;
+}
+
+.home-search-section > ul > li{
+    height: 50%;
+    list-style:none;
+    border-radius: 14px;
+}
+
+.home-search-section > ul > li > a{
+    display: block;
+    padding:12px 0 5px 25px;
+    height: 100%;
+    text-decoration:none;
+    color:rgb(232, 227, 227);
+    font-size:19px;
+    font-weight: bold;
+}
+
+.home-search-section > ul > li > a > i{
+    margin-right:20px;
+}
+
+.hover{
+    color:white;
+}
+
+.collpse-playlist{
+    height:80%;
+    background-color:#212020;
+    border-radius: 14px;
+    resize: horizontal;
+    overflow: auto;
+    margin:10px;
+    padding:10px;
+}
+
+.div-2{
+    padding:10px;
+    width:100%;
+}
+
+.svg-collapse{
+    height:56px;
+    padding:10px;
+    font-size:20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-bottom:10px;
+}
+
+#linking-tag{
+    color:white;
+    width:100%;
+    cursor:pointer;
+}
+
+#linking-tag > svg{
+    fill:white;
+    width:25px;
+    margin-right: 10px;
+}
+
+.linking-tag-span{
+    white-space: nowrap;
+}
+
+.last-icons-svg{
+    display: flex;
+}
+
+ .logo{
+    fill:whitesmoke;
+    margin-left:20px;
+    height:16px;
+    width:16px;
+    cursor:pointer;
+}
+
+.hover-icon :hover{
+    color:white;
+}
+
+.playlist-section{
+    height:48px;
+    display: flex;
+    flex-direction: row;
+    position:relative;
+}
+
+.div-playlist{
+    display: inline-block;
+}
+
+.logo-playlist{
+    border:1px;
+    background-color:#2a2a2a;
+    padding:10px;
+    font-size: 0.856rem;
+    color:white;
+    text-decoration: none;
+    font-family:sans-serif;
+    border-radius: 12px;
+    cursor:pointer;
+}
+
+
+.logo-playlist:hover{
+    background-color:rgb(230, 220, 220);
+    color:black;
+}
+
+
+.icon-section-playlist{
+    color:white;
+    flex-wrap: nowrap;
+    overflow:hidden;
+    white-space:nowrap;
+    padding-top:10px;
+}
+
+.last-icon-section-playlist{
+    position:absolute;
+    right:0;
+    /* white-space: nowrap; */
+    overflow:hidden;
+}
+
+.last-icon-section-playlist >a{
+    color:white;
+    width:16px;
+    height:16px;
+    margin-left:10px;
+}
+
+.logo-down{
+    fill:white;
+}
+
+.logo-recent{
+    text-decoration: none;
+}
+
+.heading-playlist{
+    display:block;
+    color:white;
+    padding:10px;
+    display: flex;
+    justify-content: space-between;
+    font-size:0.675rem;
+    border-bottom:1px solid white;
+}
+
+.main-playlist-section{
+    overflow-y: scroll;
+    background-color:#121212;
+    padding-top:10px;
+    color:white;
+}
+
+/* main div of playlist */
+
+.playlist-div{
+    height:67px;
+    width:100%;
+    background-color:#121212;
+    margin-bottom:5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom:3px; 
+    padding:5px;
+    cursor:pointer; 
+}
+
+.playlist-div:hover{
+    background-color:#222222; 
+}
+
+.playlist-div > section > label{
+    color:white;
+    font-size:14px;
+}
+
+/* div containing the image div */
+
+.playlist-image-section{
+    margin-right:10px;
+    width:48px;
+    height:48px;
+
+}
+
+.playlist-image-section > img{
+    object-fit: cover;
+    width:100%;
+    height:100%;
+    border-radius: 10px;
+}
+
+
+/* ? Text Section IN PlayList Div */
+
+.text-image-combo-section{
+    margin-left:10px;
+    display:flex;
+    width:120px;
+    display:flex;
+    align-items: center;
+}
+
+/* Main-text-section for image-text-combo-section  */
+
+.playlist-section-text{
+    font-size:13px;
+    height:48px;
+    padding:4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Playlist-Name inside text-image-combo */
+
+.playlist-name{
+        margin-bottom:5px;
+}
+
+
+/* Para tag inside the text-image-combo-section */
+
+.playlist-name > p{
+    font-size: 16px;
+}
+
+
+/* playlist middle date */
+
+.date-added{
+    margin-right:50px;
+    display: flex;
+    align-items: center;
+}
+
+
+/* Playlist last date  */
+
+.last-played{
+    display: flex;
+    align-items: center;
+}
+
+/* Common p tag in divs */
+
+.common-p{
+    font-size: 14px;
+}
+
+
+/* ?  Main section two begins here */
+
+.main-section-2{
+    display: flex;
+    flex-direction: column;
+    width:55%;
+    height: 100%;
+    margin-left:5px;
+    background-color:black;
+    border-radius:14px;
+    position: relative;
+    min-width:580px;
+    overflow:auto;
+    resize:horizontal;
+}
+
+
+/* first-nav of sectin 2 div */
+.upper-nav{
+    height:64px;
+    width:100%;
+    position: absolute;
+    background-color:#4c4f4f;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index:1;
+    border-radius:14px 14px 0 0;
+}
+
+
+/* main div containing both logos */
+
+.section-logo-less-greate-than{
+    display: inline-flex;
+    flex-direction: row;
+    margin-left:20px;
+}
+
+/* common class for both logo containers */
+
+.div-logo-inline{
+    width: 33px;
+    height: 33px;
+    display: inline-flex;
+    align-items: center;
+    padding:10px;
+    background-color: rgb(44, 44, 44);
+    color:white;
+    border-radius: 50%;
+}
+
+/* less than logo container */
+
+.less-than-logo{
+    margin-right:5px;
+}
+
+/* buttons inside the logo-parent */
+
+.div-logo-inline > button{
+    background-color: transparent;
+    color:white;
+    border:none;
+    margin: 0 auto;
+}
+
+/* targeting first logo button */
+
+.div-logo-inline > button > i{
+    font-weight: 200;
+}
+
+/* ? Flex-end div that is present at end */
+
+.flex-end-logo-section{
+    display: flex;
+    flex-direction: row;
+    margin-right:20px;
+}
+
+.flex-end-logo-section > button{
+    border:none;
+}
+
+.flex-items{
+    padding:8px;
+    margin-left:10px;
+    border-radius:48px;
+    font-size:13.5px;
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+}
+
+.flex-items:hover{
+   color:white;
+   fill:white; 
+   background-color:black;
+}
+
+.explore-premium{
+    display: flex;
+    align-items: center;
+    background-color:white;
+    color:black;
+}
+
+.install-app-button{
+    background-color:black;
+    color:white;
+    fill:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.install-app-button:hover{
+    background-color:white;
+    fill:black;
+    color:black;
+}
+
+.main-span-install-app{
+    display: flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.logo-span{
+    margin-left:5px;
+    margin-top:3px;
+    margin-right:8px;
+}
+
+.text-install{
+    font-size: 14px;
+}
+
+.logo-account-info{
+    background-color:black;
+    border-radius: 50%;
+    width:38px;
+    height:38px;
+}
+
+.logo-account-info:hover{
+    background-color: white;
+    color:black;
+    fill:black;
+}
+
+.logo-account-info > svg{
+    fill :white;
+    color: black;
+}
+
+
+/* !  Well Wishes Section div */
+
+.well-wishes{
+    /* display: inline-block; */
+    position: relative;
+    margin-top:64px;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    color:white;
+    background-color:#4c4f4f;
+    height:50px;
+    width: 100%;
+}
+
+.well-wishes >h1{
+    letter-spacing: 2px;
+    margin-top:10px;
+    color:white;
+    height: 100%;
+    margin-left:30px;
+    margin-bottom:10px;
+}
+
+.after-nav{
+    height:fit-content;
+    width: 100%;
+    z-index:0;
+}
+
+.made-for{
+    width:100%;
+    color:white;
+    padding:10px;
+    background-image:linear-gradient(1deg,black 20%,grey 80%)
+}
+
+
+.made-for-text{
+    font-size:35px;
+}
+
+.made-for-text > p{
+    margin-left:10px;
+    margin-top: 10px;
+    margin-bottom: auto;
+}
+
+.made-for-grid-section{
+    margin-top:10px;
+    gap:20px;
+    padding:10px;
+    display:grid;
+    grid-template-columns:repeat(2,minmax(200px,1fr));
+    row-gap: 15px;
+
+}
+
+.flex-items-made-for{
+    height:64px;
+    background-color:#4f5252;
+    border-radius:7px;
+    display: flex;
+    box-shadow: 3px 3px 5px 1px #474a4a;
+}
+
+
+
+.image-section-made-for-grid-layout{
+    width:64px;
+    height:100%;
+}
+
+.image-section-made-for-grid-layout > img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    border-radius: 7px 0 0 7px;
+}
+.text-section-made-for-grid-layout{
+    color:white;
+    text-align: center;
+    margin:auto 16px;
+    font-size:18px;
+    text-transform: capitalize;
+}
+
+.play-button-seciton-made-for-grid-layout{
+    width:60px;
+    margin-left:75px;
+    visibility: hidden;
+}
+
+.background{
+    width:53px;
+    height:53px;
+    background-color:rgb(108, 255, 22);
+    margin: 6px auto;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.play-logo{
+    margin-left:3px;
+    display: flex;
+}
+
+.play-logo > svg{
+    width:25px;
+    height:25px;
+}
+
+.c3-container-section-2{
+    height:fit-content;
+    width: 100%;
+    padding:10px;
+    background-color: #000;;
+}
+
+.main-content-3-container{
+    background-color: #212020;
+    height:100%;
+    width:100%;
+    padding:10px;
+}
+
+
+.heading-3-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom:10px;
+}
+
+.main_link > a{
+    font-size: 26px;;
+}
+
+
+
+.links-c3{
+    color:white;
+    text-decoration: none;
+}
+
+.link-hover:hover{
+    border-bottom:3px solid white;
+}
+
+.flex_containers-3-section{
+    height:100%;
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+}
+
+.flex-hover:hover{
+    background-color:#282828;
+}
+
+.flex-container{
+    height:204px;
+    width:170px;;
+    background-color:#121212;
+    padding:10px;
+    border-radius:16px;
+    position:relative;
+}
+
+.img-section{
+    width:100%;
+    height:fit-content;
+    display:flex;
+    padding-top:15px;
+}
+
+.img-section > img{
+    width:118px;
+    height:118px;
+    margin:0 auto;
+    border-radius:4px;
+    object-fit: cover;
+}
+.text-section{
+    width:118px;
+    margin: 0 auto;
+}
+
+.song-section{
+    margin-top:10px;
+    margin-bottom:3px;
+}
+
+.flex-text-inside{
+    color:white;
+    text-decoration: none;
+}
+
+.c3-playbutton{
+    height:45px;
+    width:45px;
+    border-radius: 50%;
+    background-color:rgb(108, 255, 22);
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    font-size:24px;
+    position:absolute;
+    bottom:40px;
+    right:5px;
+    visibility: hidden;
+}
+
+.play-logo-c3{
+    width:100%;
+    margin-top:20px;
+    height:100%;
+    display: inline;
+    justify-content: center;
+    align-items: center;
+
+}
