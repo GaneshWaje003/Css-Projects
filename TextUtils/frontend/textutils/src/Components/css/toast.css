@@ -1,0 +1,31 @@
+.root-toast {
+    height: 45px;
+    background-color: hsl(0, 0%, 100%);
+    position: absolute;
+    z-index: 1;
+    border-radius: 5px;
+    right: 40px;
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+    padding-right: 15px;
+    background-color: rgb(2, 255, 2);
+    right:30px;
+    top:50px;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.root-toast p{
+    font-size: 15px;
+    color:white;
+    transition: all 0.21s ease;
+    font-weight: 700;
+}
+
+.root-toast img{
+    width:30px;
+    height: 30px;
+    margin-left:3px;
+    margin-right: 5px;
+    transition: all 0.21s ease;
+}

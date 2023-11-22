@@ -1,0 +1,46 @@
+.root-guess-game{
+    width: 100vw;
+    height: 95vh;
+    background-color: #112233;
+    padding-top:20px;
+    position: relative;
+}
+
+.heading-game{
+    /* background-color: #fff; */
+}
+
+.heading-game h1{
+    color:#fff;
+    user-select: none;
+    text-align: center;
+    font-size: 50px;
+    text-decoration: underline;
+}
+.recognize-name h1{
+    color:white;
+    text-align: center;
+    margin-top:60px;
+}
+
+.selection-part{
+    display: flex;
+    justify-content: center;
+    border:1px solid white;
+    padding:20px 0;
+    margin-top: 20px;
+}
+
+
+/*  For Designing the gamecard  */
+
+.game-card{
+    width:20vw;
+    height: 50vh;
+    background-color: #fff;
+    margin-right: 20px;
+}   
+
+.root-gamecard{
+    display: flex;
+}

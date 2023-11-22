@@ -1,0 +1,163 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#root-navbar {
+    position: relative;
+    z-index: 1;
+}
+
+.container-navbar {
+    width: 100%;
+    background-color: #ddd;
+    position: relative;
+}
+
+.menu-logo {
+    display: flex;
+    align-items: center;
+    box-shadow: 1px 1px 6px #111;
+}
+
+.menu-logo a {
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+}
+
+.menu-logo a img {
+    width: 3vw;
+    height: 5vh;
+    /* background-color: #fff; */
+}
+
+.menu-logo .radio-button-container{
+    position: absolute;
+    right:20px;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    padding: 10px;
+    height: 100%;
+    background-color: #1e364e;
+    width: 20%;
+    transition: all 0.25s ease;
+}
+
+.menu-search{
+    width: 100%;
+    height: 6vh;
+    border-radius: 10px;
+    background-color: #fff;
+    margin-bottom: 15px;
+    border: none;
+    color:#000;
+    padding-left: 15px;
+    font-size: 15px;
+}
+
+.menu-search:focus{
+    outline: none;
+    border: none;
+}
+
+
+/* Header Of The Navbar */
+
+.header-navbar{
+    width: 100%;
+    height: 20%;
+    background-color: #fff;
+    margin-bottom: 5%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.header-image-user-container{
+    /* border:1px solid black; */
+    display:flex;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.user-image{
+    /* border:1px solid #000; */
+    float:left;
+    width:30%;
+}
+
+.user-image img{
+    width: 100%;
+    /* display: flex; */
+} 
+
+.user-name-navbar{
+    margin-left:5%;
+    height: 100%;
+    /* padding:10px; */
+    /* border:1px solid black; */
+}
+
+.user-name-navbar p{
+    font-size:25px;
+    font-weight: 600;
+} 
+
+
+nav ul li {
+    list-style: none;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+nav ul li a {
+    display: block;
+    padding: 10px 10px 10px 15px;
+    text-decoration: none;
+    border-radius: 6px;
+    background-color: #ffffff;
+    color: #000;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li a img{
+    width:20px;
+    height: 20px;
+    margin-right: 10px;
+    display: inline;  
+}
+
+nav ul li a p{
+    display: inline;
+    height: 100%;
+    text-align: center;
+}
+
+.goBack {
+    background-color: #fff;
+    width:50px;
+    height:50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    position: absolute;
+    right: -8%;
+    top:50%;
+    transform: translateY(-50%);
+    border:1px solid black;
+    transition: all 0.35s ease-in-out;
+}
+
+.goBack img{
+    width:30px;
+    transition: all 0.35s ease-in-out;
+    height:30px;
+
+}

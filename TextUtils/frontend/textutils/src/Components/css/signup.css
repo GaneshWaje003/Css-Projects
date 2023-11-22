@@ -1,0 +1,202 @@
+.root-signup {
+    width: 100vw;
+    height: 95vh;
+    background-color: #112233;
+    /* padding: 10px; */
+    position: relative;
+    display: flex;
+    z-index: 0;
+}
+
+.sign-up-form {
+    /* padding: 20px 10px 10px 30px; */
+    width: 50%;
+    border-right: 5px solid white;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+
+.signup-input-container{
+    display: inline;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid white; */
+}
+
+.first-name {
+    margin-top: 20px;
+}
+
+.middle-name {}
+
+.sir-name {}
+
+.user-name {}
+
+.password {}
+
+.confirm-password {}
+
+.tag-names {
+    color: #000;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    user-select: none;
+    transition: all 0.28s ease;
+}
+
+.input-fields {
+    width: 30vw;
+    padding-left: 10px;
+}
+
+.input-fields:active
+.input-fields:not(:placeholder-shown)>.tag-names,
+:focus-within>.tag-names {
+    background-color: #ffffff;
+    color: #000;
+    top: 1px;
+    padding: 0 4px 0px 4px;
+    left:10px;
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.group-div {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
+/* Saving the user's info when __ buton is clicked */
+#save-signin-btn {
+    font-size: 15px;
+    padding: 5px 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    /* position: absolute; */
+    /* margin:0 auto; */
+    
+}
+
+.save-signin {
+    /* border: 1px solid white; */
+    display: flex;
+    justify-content: center;
+    width:30vw;
+
+}
+
+
+#login-options {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+#login-options img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+#login-options a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#login-google {
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 1px 5px black;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+#login-google a {
+    display: flex;
+    align-items: center;
+    padding: 5px 20px;
+    color: white;
+}
+
+#login-facebook {
+    width: fit-content;
+    box-shadow: 1px 1px 5px black;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+
+
+#login-facebook a {
+    display: flex;
+    padding: 5px 20px;
+    color: white;
+    align-items: center;
+}
+
+
+h1 {
+    user-select: none;
+}
+
+p {
+    user-select: none;
+}
+
+.intro-side {
+    width: 50%;
+    height: 100%;
+    /* border: 1px solid white; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    backdrop-filter: blur(40px);
+}
+
+.heading-intro h1 {
+    color: white;
+    text-align: center;
+    font-size: 70px;
+    padding-right: 5px;
+    border-right: 7px solid white;
+    overflow: hidden;
+    white-space: nowrap;
+    letter-spacing: 3px;
+    animation: typing 3s steps(40) 1;
+}
+
+.textutils-info-1 {
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+}
+
+.textutils-info-2 {
+    color: #fff;
+    margin-top: 50px;
+}
+
+@keyframes typing{
+    0%{
+        width:0%;
+    }
+    100%{
+        width:100%;
+    }
+}

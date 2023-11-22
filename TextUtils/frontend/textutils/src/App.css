@@ -1,0 +1,39 @@
+*{
+  padding:0;
+  margin:0;
+}
+
+
+.container-1{
+  width:100vw;
+  height: 100vh;
+}
+
+
+/* For radio button widget Css  */
+
+.mode-radio-button{
+  width: 43px;
+  border-radius: 10px;
+  height:15px;
+  background-color: #47abf2;
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+
+.mode-radio-button button{
+  width:23px;
+  height:23px;
+  border-radius: 50%;
+  position: absolute;
+  background-color: #000;
+  outline: none;
+  border:none;
+  font-weight: bold;
+}
+
+.mode-radio-button:focus,:active{
+  outline:none;
+}
+
